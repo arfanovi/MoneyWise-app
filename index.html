@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Adding CSS and SCSS Link  -->
+    <link rel="stylesheet" href="Styles/css.css">
+    <link rel="stylesheet" href="Styles/scss.scss">
+    <title>My Money</title>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div>
+                <button id="mode-toggle" onclick="toggleMode()">
+                    <i class="fas fa-adjust">
+                    </i>
+                </button>
+
+                <div class="container2">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <section class="section"">
+            <!-- Task Input  -->
+            <div class="task-form">
+                <p>Saving Money is the ultimate form of self-care</p>
+                <hr><br>
+                <h2 style="color: #6b0a44;">
+                Task Financial Management
+                </h2>
+
+                <div style="padding: 10px;">
+                    <div class="input-group">
+                        <label for="task-name">What Type</label>
+                        <input type="text" name="" id="task-name" placeholder="Type of Money">
+                    </div>
+                    <div class="input-group">
+                        <label for="task-title">Title</label>
+                        <input type="text" name="" id="task-title" placeholder="Money Title">
+                    </div>
+                    <div class="input-group">
+                        <label for="task-description">Description</label>
+                        <input type="text" name="" id="task-description" placeholder="Type of Money">
+                    </div>
+                    <div class="input-group">
+                        <label for="Cash">Today Cash</label>
+                        <input type="text" name="" id="Cash" placeholder="Your Cash">
+                    </div>
+                    <div class="input-group">
+                        <label for="Cost">What Type</label>
+                        <input type="text" name="" id="cost" placeholder="Today Cost">
+                    </div>
+
+                    <div class="button-warper">
+                        <button onclick="addTask()">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Task Table  -->
+            <div style="padding: 10px;" class="task-table">
+                <h2>Money Details</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="task-table-body">
+                        <!-- adding input field data  -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Footer Adding  -->
+    <footer>
+        <div class="footer">
+            <p>Money Safe - All Rights Reserved</p> 
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

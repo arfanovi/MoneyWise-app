@@ -1,0 +1,168 @@
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+        
+      body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+.dark-mode {
+    background-color: #333;
+    color: rgb(209, 157, 157);
+    padding: 10px;
+}
+
+#mode-toggle {
+   
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #986a6a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+#mode-toggle:hover {
+    background-color: #371616;
+}
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .task-form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .input-group {
+           
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            font-weight: bold;
+            display: block;
+        }
+
+        .input-group input[type="text"],
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button{
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #080c10;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+
+        .task-table {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .task-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .task-table th,
+        .task-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            
+        }
+
+        .task-table th {
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            background-color: #333;
+            margin-top: 10vh;
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            animation: slideUp 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+          /* Define text color animation */
+          @keyframes changeTextColor {
+            0% { color: red; }
+            20% { color: blue; }
+            40% { color: green; }
+            60% { color: orange; }
+            80% { color: purple; }
+            100% { color: black; }
+        }
+
+        /* Apply text color animation to <p> element */
+        p {
+            animation: changeTextColor 10s infinite;
+        }
+        /* Apply animation set to <hr> element */
+        hr {
+            animation: bounce 3s infinite;
+        }
+
+        /* Apply animation set to <br> element */
+        br {
+            animation: rotate 5s infinite;
+        }
+
+
+
+
+        @media (min-width: 768px) {
+            .section {
+                display: flex;
+                column-gap: 10vh;
+                justify-content: center; /* Center the flex items */
+
+            }
+        }
+        
+
+
+
+
+
+
