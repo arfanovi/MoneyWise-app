@@ -41,3 +41,17 @@ function clearFields() {
 }
     displayTasks();
 
+    function toggleMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
+    
+        const modeIcon = document.getElementById('mode-icon');
+        if (body.classList.contains('dark-mode')) {
+            modeIcon.classList.remove('fa-sun');
+            modeIcon.classList.add('fa-moon'); // Change the icon to moon for dark mode
+        } else {
+            modeIcon.classList.remove('fa-moon');
+            modeIcon.classList.add('fa-sun'); // Change the icon back to sun for light mode
+        }
+    }
+    
